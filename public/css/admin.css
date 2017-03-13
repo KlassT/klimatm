@@ -1,0 +1,65 @@
+.check {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    overflow: hidden;
+}
+
+    .check input {
+        display: none;
+    }
+
+    .check label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+        .check span {
+            position: absolute;
+            top: 0;
+            left: -300px;
+        }
+
+
+    .check input:checked + span {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+.products-delete-form {
+    display: none;
+}
+
+textarea {
+    min-height: 250px;
+    resize: none;
+}
+
+table td {
+    vertical-align: middle !important;
+}
+
+.subcategory-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.select2 {
+    width: 100%;
+}
